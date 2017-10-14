@@ -44,8 +44,296 @@ $base_url = CI_BASE_URL;
 
         <!--========== PAGE LAYOUT ==========-->
 
+		<!-- Services -->
+        <div id="services">
+            <div class="bg-color-sky-light" data-auto-height="true">
+                <div class="content-lg container">
+                    <div class="row margin-b-40">
+                        <div class="col-sm-6">
+                            <h2>Services</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
+                        </div>
+                    </div>
+                    <!--// end row -->
+                    <div class="row row-space-1 margin-b-2">
+						<!--service 1-->
+						<div class="work work-popup-trigger pointer">
+							<div class="col-sm-4 sm-margin-b-2">
+								<div class="service" data-height="height">
+									<div class="service-element">
+										<i class="service-icon icon-chemistry"></i>
+									</div>
+									<div class="service-info">
+										<h3>Company Formation</h3>
+										<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+									</div>
+								</div>
+							</div>
+							<div class="work-popup-overlay">
+								<div class="work-popup-content">
+									<a href="javascript:void(0);" class="work-popup-close">Hide</a>
+									<div class="margin-b-30">
+										<h3 class="margin-b-5">Art Of Coding</h3>
+										<span>Clean &amp; Minimalistic Design</span>
+									</div>
+									<div class="row">
+										<div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+											<div class="margin-t-10 sm-margin-t-0">
+												<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+												<ul class="list-inline work-popup-tag">
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="margin-t-10 sm-margin-t-0">
+												<p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
+												<p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
+												<p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
+												<p class="margin-b-5"><strong>Client:</strong> FairTech</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--service 2-->
+						<div class="work work-popup-trigger pointer">
+							<div class="col-sm-4 sm-margin-b-2">
+								<div class="service" data-height="height">
+									<div class="service-element">
+										<i class="service-icon icon-chemistry"></i>
+									</div>
+									<div class="service-info">
+										<h3>Company Formation</h3>
+										<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+									</div>
+								</div>
+							</div>
+							<div class="work-popup-overlay">
+								<div class="work-popup-content">
+									<a href="javascript:void(0);" class="work-popup-close">Hide</a>
+									<div class="margin-b-30">
+										<h3 class="margin-b-5">Art Of Coding</h3>
+										<span>Clean &amp; Minimalistic Design</span>
+									</div>
+									<div class="row">
+										<div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+											<div class="margin-t-10 sm-margin-t-0">
+												<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+												<ul class="list-inline work-popup-tag">
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="margin-t-10 sm-margin-t-0">
+												<p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
+												<p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
+												<p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
+												<p class="margin-b-5"><strong>Client:</strong> FairTech</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--service 3-->
+						<div class="work work-popup-trigger pointer">
+							<div class="col-sm-4 sm-margin-b-2">
+								<div class="service" data-height="height">
+									<div class="service-element">
+										<i class="service-icon icon-chemistry"></i>
+									</div>
+									<div class="service-info">
+										<h3>Company Formation</h3>
+										<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+									</div>
+								</div>
+							</div>
+							<div class="work-popup-overlay">
+								<div class="work-popup-content">
+									<a href="javascript:void(0);" class="work-popup-close">Hide</a>
+									<div class="margin-b-30">
+										<h3 class="margin-b-5">Art Of Coding</h3>
+										<span>Clean &amp; Minimalistic Design</span>
+									</div>
+									<div class="row">
+										<div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+											<div class="margin-t-10 sm-margin-t-0">
+												<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+												<ul class="list-inline work-popup-tag">
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="margin-t-10 sm-margin-t-0">
+												<p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
+												<p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
+												<p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
+												<p class="margin-b-5"><strong>Client:</strong> FairTech</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                    <!--// end row -->
+
+                    <div class="row row-space-1">
+                        <!--service 1-->
+						<div class="work work-popup-trigger pointer">
+							<div class="col-sm-4 sm-margin-b-2">
+								<div class="service" data-height="height">
+									<div class="service-element">
+										<i class="service-icon icon-chemistry"></i>
+									</div>
+									<div class="service-info">
+										<h3>Company Formation</h3>
+										<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+									</div>
+								</div>
+							</div>
+							<div class="work-popup-overlay">
+								<div class="work-popup-content">
+									<a href="javascript:void(0);" class="work-popup-close">Hide</a>
+									<div class="margin-b-30">
+										<h3 class="margin-b-5">Art Of Coding</h3>
+										<span>Clean &amp; Minimalistic Design</span>
+									</div>
+									<div class="row">
+										<div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+											<div class="margin-t-10 sm-margin-t-0">
+												<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+												<ul class="list-inline work-popup-tag">
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="margin-t-10 sm-margin-t-0">
+												<p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
+												<p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
+												<p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
+												<p class="margin-b-5"><strong>Client:</strong> FairTech</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--service 2-->
+						<div class="work work-popup-trigger pointer">
+							<div class="col-sm-4 sm-margin-b-2">
+								<div class="service" data-height="height">
+									<div class="service-element">
+										<i class="service-icon icon-chemistry"></i>
+									</div>
+									<div class="service-info">
+										<h3>Company Formation</h3>
+										<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+									</div>
+								</div>
+							</div>
+							<div class="work-popup-overlay">
+								<div class="work-popup-content">
+									<a href="javascript:void(0);" class="work-popup-close">Hide</a>
+									<div class="margin-b-30">
+										<h3 class="margin-b-5">Art Of Coding</h3>
+										<span>Clean &amp; Minimalistic Design</span>
+									</div>
+									<div class="row">
+										<div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+											<div class="margin-t-10 sm-margin-t-0">
+												<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+												<ul class="list-inline work-popup-tag">
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="margin-t-10 sm-margin-t-0">
+												<p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
+												<p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
+												<p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
+												<p class="margin-b-5"><strong>Client:</strong> FairTech</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--service 3-->
+						<div class="work work-popup-trigger pointer">
+							<div class="col-sm-4 sm-margin-b-2">
+								<div class="service" data-height="height">
+									<div class="service-element">
+										<i class="service-icon icon-chemistry"></i>
+									</div>
+									<div class="service-info">
+										<h3>Company Formation</h3>
+										<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+									</div>
+								</div>
+							</div>
+							<div class="work-popup-overlay">
+								<div class="work-popup-content">
+									<a href="javascript:void(0);" class="work-popup-close">Hide</a>
+									<div class="margin-b-30">
+										<h3 class="margin-b-5">Art Of Coding</h3>
+										<span>Clean &amp; Minimalistic Design</span>
+									</div>
+									<div class="row">
+										<div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+											<div class="margin-t-10 sm-margin-t-0">
+												<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+												<ul class="list-inline work-popup-tag">
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
+													<li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="margin-t-10 sm-margin-t-0">
+												<p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
+												<p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
+												<p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
+												<p class="margin-b-5"><strong>Client:</strong> FairTech</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+        </div>
+        <!-- End Service -->
+		
+		
         <!-- Latest Products -->
-        <div id="products">
+<!--        <div id="products">
             <div class="content-lg container">
                 <div class="row margin-b-40">
                     <div class="col-sm-6">
@@ -53,10 +341,10 @@ $base_url = CI_BASE_URL;
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
                     </div>
                 </div>
-                <!--// end row -->
+                // end row 
 
                 <div class="row">
-                    <!-- Latest Products -->
+                     Latest Products 
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="margin-b-20">
                             <img class="img-responsive" src="<?php echo "{$base_url}assets/img/970x647/01.jpg" ?>" alt="Latest Products Image">
@@ -65,9 +353,9 @@ $base_url = CI_BASE_URL;
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
                         <a class="link" href="#">Details</a>
                     </div>
-                    <!-- End Latest Products -->
+                     End Latest Products 
 
-                    <!-- Latest Products -->
+                     Latest Products 
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="margin-b-20">
                             <img class="img-responsive" src="<?php echo "{$base_url}assets/img/970x647/02.jpg" ?>" alt="Latest Products Image">
@@ -76,9 +364,9 @@ $base_url = CI_BASE_URL;
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
                         <a class="link" href="#">Details</a>
                     </div>
-                    <!-- End Latest Products -->
+                     End Latest Products 
 
-                    <!-- Latest Products -->
+                     Latest Products 
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="margin-b-20">
                             <img class="img-responsive" src="<?php echo "{$base_url}assets/img/970x647/03.jpg" ?>" alt="Latest Products Image">
@@ -87,20 +375,20 @@ $base_url = CI_BASE_URL;
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
                         <a class="link" href="#">Details</a>
                     </div>
-                    <!-- End Latest Products -->
+                     End Latest Products 
                 </div>
-                <!--// end row -->
+                // end row 
             </div>
         </div>
-        <!-- End Latest Products -->
+         End Latest Products 
 
-        <!-- Pricing -->
+         Pricing 
         <div id="pricing">
             <div class="bg-color-sky-light">
                 <div class="content-lg container">
                     <div class="row row-space-1">
                         <div class="col-sm-4 sm-margin-b-2">
-                            <!-- Pricing -->
+                             Pricing 
                             <div class="pricing">
                                 <div class="margin-b-30">
                                     <i class="pricing-icon icon-chemistry"></i>
@@ -114,10 +402,10 @@ $base_url = CI_BASE_URL;
                                 </ul>
                                 <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Start Now</a>
                             </div>
-                            <!-- End Pricing -->
+                             End Pricing 
                         </div>
                         <div class="col-sm-4 sm-margin-b-2">
-                            <!-- Pricing -->
+                             Pricing 
                             <div class="pricing pricing-active">
                                 <div class="margin-b-30">
                                     <i class="pricing-icon icon-badge"></i>
@@ -131,10 +419,10 @@ $base_url = CI_BASE_URL;
                                 </ul>
                                 <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Start Now</a>
                             </div>
-                            <!-- End Pricing -->
+                             End Pricing 
                         </div>
                         <div class="col-sm-4">
-                            <!-- Pricing -->
+                             Pricing 
                             <div class="pricing">
                                 <div class="margin-b-30">
                                     <i class="pricing-icon icon-shield"></i>
@@ -148,17 +436,17 @@ $base_url = CI_BASE_URL;
                                 </ul>
                                 <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Start Now</a>
                             </div>
-                            <!-- End Pricing -->
+                             End Pricing 
                         </div>
                     </div>
-                    <!--// end row -->
+                    // end row 
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- End Pricing -->
 
         <!-- Work -->
-        <div id="work">
+        <div id="products">
             <div class="section-seperator">
                 <div class="content-md container">
                     <div class="row margin-b-40">
@@ -376,29 +664,94 @@ $base_url = CI_BASE_URL;
             
             <!-- Clients -->
             <div class="content-lg container">
+				<div class="row margin-b-40">
+					<div class="col-sm-6">
+						<h2>Suppliers</h2>
+						<p>We stock a wide range of the best passenger, SUV, 4x4 and commercial tyres to suit your budget and needs. Our tyre brands include the following:</p>
+					</div>
+				</div>
                 <!-- Swiper Clients -->
                 <div class="swiper-slider swiper-clients">
                     <!-- Swiper Wrapper -->
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="<?php echo "{$base_url}assets/img/clients/01.png" ?>" alt="Clients Logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="<?php echo "{$base_url}assets/img/clients/02.png" ?>" alt="Clients Logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="<?php echo "{$base_url}assets/img/clients/03.png" ?>" alt="Clients Logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="<?php echo "{$base_url}assets/img/clients/04.png" ?>" alt="Clients Logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="<?php echo "{$base_url}assets/img/clients/05.png" ?>" alt="Clients Logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="<?php echo "{$base_url}assets/img/clients/06.png" ?>" alt="Clients Logo">
-                        </div>
-                    </div>
+					<?php
+					
+						$service_arr = [];
+						
+						$service_arr[] = [
+							"image_path" => "{$base_url}assets/img/clients/01.png",
+							"name" => "Pirelli",
+							"url" => "https://www.pirelli.com/tyres/en-za/car/homepage",
+						];
+						$service_arr[] = [
+							"image_path" => "{$base_url}assets/img/clients/02.png",
+							"name" => "Michelin",
+							"url" => "http://www.michelin.co.za/ZA/en/homepage.html",
+						];
+						$service_arr[] = [
+							"image_path" => "{$base_url}assets/img/clients/03.png",
+							"name" => "Goodyear",
+							"url" => "https://www.goodyear.eu/en_za/consumer.html",
+						];
+						$service_arr[] = [
+							"image_path" => "{$base_url}assets/img/clients/04.png",
+							"name" => "Firestone",
+							"url" => "http://www.firestone.com/",
+						];
+						$service_arr[] = [
+							"image_path" => "{$base_url}assets/img/clients/05.png",
+							"name" => "Falken",
+							"url" => "http://www.falken.co.za/",
+						];
+						$service_arr[] = [
+							"image_path" => "{$base_url}assets/img/clients/06.png",
+							"name" => "Dunlop",
+							"url" => "http://www.dunloptyres.co.za/",
+						];
+						$service_arr[] = [
+							"image_path" => "{$base_url}assets/img/clients/07.png",
+							"name" => "Continental",
+							"url" => "http://www.continental-tyres.co.za/car",
+						];
+						$service_arr[] = [
+							"image_path" => "{$base_url}assets/img/clients/08.png",
+							"name" => "Bridgestone",
+							"url" => "https://www.bridgestone.co.za/",
+						];
+						$service_arr[] = [
+							"image_path" => "{$base_url}assets/img/clients/09.png",
+							"name" => "Coopertyres",
+							"url" => "https://www.coopertyres.co.za/Default",
+						];
+						$service_arr[] = [
+							"image_path" => "{$base_url}assets/img/clients/10.png",
+							"name" => "Mickey Thompson",
+							"url" => "http://www.mickeythompson.co.za/",
+						];
+						$service_arr[] = [
+							"image_path" => "{$base_url}assets/img/clients/11.png",
+							"name" => "BF Goodrich",
+							"url" => "http://www.bfgoodrich.co.za/",
+						];
+						$service_arr[] = [
+							"image_path" => "{$base_url}assets/img/clients/12.png",
+							"name" => "Yokohama",
+							"url" => "https://www.yokohama.co.za/",
+						];
+					
+						$html = [];
+						$html[] = "<div class='swiper-wrapper'>";
+						foreach ($service_arr as $key => $data) {
+							$html[] = "
+								<div class='swiper-slide'>
+									<img class='swiper-clients-img' onclick='window.open(\"{$data['url']}\", \"_blank\");' src='{$data['image_path']}' alt='{$data['name']}'>
+								</div>
+								";
+						}
+						$html[] = "</div>";
+						
+						echo implode(" ", $html);
+						
+					?>
                     <!-- End Swiper Wrapper -->
                 </div>
                 <!-- End Swiper Clients -->
@@ -407,102 +760,6 @@ $base_url = CI_BASE_URL;
         </div>
         <!-- End Work -->
 
-        <!-- Services -->
-        <div id="services">
-            <div class="bg-color-sky-light" data-auto-height="true">
-                <div class="content-lg container">
-                    <div class="row margin-b-40">
-                        <div class="col-sm-6">
-                            <h2>Services</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
-                        </div>
-                    </div>
-                    <!--// end row -->
-
-                    <div class="row row-space-1 margin-b-2">
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-chemistry"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Company Formation</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service bg-color-base" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon color-white icon-screen-tablet"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3 class="color-white">Stuff Management</h3>
-                                    <p class="color-white margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>KPI Optimization</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                    </div>
-                    <!--// end row -->
-
-                    <div class="row row-space-1">
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-notebook"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Information Security</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-speedometer"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Recrutinment</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Materials Supply</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                    </div>
-                    <!--// end row -->
-                </div>
-            </div>
-        </div>
-        <!-- End Service -->
-        
 		<!-- About -->
         <div id="about">
             <div class="content-lg container">

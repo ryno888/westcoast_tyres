@@ -1,3 +1,16 @@
+.pointer {
+    cursor: pointer;
+}
+
+.service:hover{
+    background: #ffd400;
+    color: #FFF !important;
+    padding: 50px;
+}
+.service:hover p, .service:hover h3{
+    color: #FFF !important;
+}
+
 .swiper-slider {
     position: relative;
     width: 100%;

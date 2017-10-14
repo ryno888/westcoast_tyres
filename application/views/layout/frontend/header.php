@@ -21,7 +21,7 @@ $base_url = CI_BASE_URL;
     <link rel="stylesheet" type="text/css" href="<?php echo $base_url; ?>assets/css/frontend.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $base_url; ?>assets/css/style.css">
     
-	<link rel="shortcut icon" href="favicon.ico"/>
+	<link rel="shortcut icon" href="<?php echo $base_url; ?>assets/img/favicon.png"/>
     <script>
         var ci_base_url = "<?php echo CI_BASE_URL; ?>";
     </script>
@@ -52,10 +52,8 @@ $base_url = CI_BASE_URL;
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
 								<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#services">Services</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#products">Products</a></li>
-								<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Credentials</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#pricing">Pricing</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">Team</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover1" href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
