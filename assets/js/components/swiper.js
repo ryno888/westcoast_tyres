@@ -1,6 +1,8 @@
 $(window).load(function(){
     // Swiper Clients
     var swiper = new Swiper('.swiper-clients', {
+        speed: 1000,
+        autoplay: 3000,
         slidesPerView: 5,
         spaceBetween: 50,
         loop: true,

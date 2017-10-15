@@ -580,10 +580,10 @@ $base_url = CI_BASE_URL;
                         </div>
 						<div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
 						<div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-30">
-                            <!-- Work -->
+                             <!-- Work -->
                             <div class="work work-popup-trigger">
                                 <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="<?php echo "{$base_url}assets/img/397x415/01.jpg" ?>" alt="Portfolio Image">
+                                    <img class="full-width img-responsive" src="<?php echo "{$base_url}assets/img/397x300/01.jpg" ?>" alt="Portfolio Image">
                                 </div>
                                 <div class="work-popup-overlay">
                                     <div class="work-popup-content">
@@ -618,11 +618,50 @@ $base_url = CI_BASE_URL;
                             </div>
                             <!-- End Work -->
                         </div>
-                        <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8 margin-b-30">
-                            <!-- Work -->
+                        <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-30">
+                             <!-- Work -->
                             <div class="work work-popup-trigger">
                                 <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="<?php echo "{$base_url}assets/img/800x400/01.jpg" ?>" alt="Portfolio Image">
+                                    <img class="full-width img-responsive" src="<?php echo "{$base_url}assets/img/397x300/01.jpg" ?>" alt="Portfolio Image">
+                                </div>
+                                <div class="work-popup-overlay">
+                                    <div class="work-popup-content">
+                                        <a href="javascript:void(0);" class="work-popup-close">Hide</a>
+                                        <div class="margin-b-30">
+                                            <h3 class="margin-b-5">Art Of Coding</h3>
+                                            <span>Clean &amp; Minimalistic Design</span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+                                                <div class="margin-t-10 sm-margin-t-0">
+                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                                                    <ul class="list-inline work-popup-tag">
+                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
+                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
+                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="margin-t-10 sm-margin-t-0">
+                                                    <p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
+                                                    <p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
+                                                    <p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
+                                                    <p class="margin-b-5"><strong>Client:</strong> FairTech</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Work -->
+                        </div>
+                        <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-30">
+                             <!-- Work -->
+                            <div class="work work-popup-trigger">
+                                <div class="work-overlay">
+                                    <img class="full-width img-responsive" src="<?php echo "{$base_url}assets/img/397x300/01.jpg" ?>" alt="Portfolio Image">
                                 </div>
                                 <div class="work-popup-overlay">
                                     <div class="work-popup-content">

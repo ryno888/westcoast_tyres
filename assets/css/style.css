@@ -75,3 +75,18 @@
         text-shadow: none !important;
     }
 }
+
+@media (min-width: 992px){
+    .page-on-scroll .header .nav-item-child{
+        color: #515769 !important;
+        transition-duration: .3s;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(.7,1,.7,1);
+    }
+    
+}
+
+.accordion .collapse.in, .accordion [aria-expanded=true] {
+    color: #fff;
+    background: #ffd400;
+}
