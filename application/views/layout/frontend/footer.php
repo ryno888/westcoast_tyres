@@ -65,7 +65,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
         <!-- CORE PLUGINS -->
-        <script src="<?php echo "{$base_url}assets/vendor/jquery.min.js"; ?>" type="text/javascript"></script>
         <script src="<?php echo "{$base_url}assets/vendor/jquery-migrate.min.js"; ?>" type="text/javascript"></script>
         <script src="<?php echo "{$base_url}assets/vendor/bootstrap/js/bootstrap.min.js"; ?>" type="text/javascript"></script>
 

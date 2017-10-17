@@ -42,7 +42,7 @@ if (!defined('CR_FACEBOOK_SECRET'))     { define('CR_FACEBOOK_SECRET', ""); }
 if (!defined('CR_TINYPNG_KEY'))         { define('CR_TINYPNG_KEY', ""); }
 
 //meta
-defined('CI_META_TITLE')        OR define('CI_META_TITLE', CI_NAME." | ".CI_SYSTEM_NAME);
+defined('CI_META_TITLE')        OR define('CI_META_TITLE', CI_NAME." | Website");
 defined('CI_META_DESCRIPTION')  OR define('CI_META_DESCRIPTION', "Westcoast Tyres");
 defined('CI_META_KEYWORDS')     OR define('CI_META_KEYWORDS', "System, Westcoast Tyres, Westcoast, Tyres");
 defined('CI_META_AUTHOR')       OR define('CI_META_AUTHOR', "Ryno van Zyl");

@@ -5,12 +5,38 @@ $base_url = CI_BASE_URL;
 <html lang="en" class="no-js">
 <head>
 	<meta charset="utf-8"/>
-	<title>FlameOnePage Free Template by FairTech</title>
+	<title><?php echo CI_META_TITLE; ?></title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="width=device-width, initial-scale=1" name="viewport"/>
 	<meta content="FlameOnePage freebie theme for web startups by FairTech SEO." name="description"/>
 	<meta content="FairTech" name="author"/>
-	<?php echo isset($meta) ? Lib_html_tags::load_meta_data($meta) : false; ?>
+	
+	<?php
+		$meta_arr[] = [
+			'name' => "title",
+			'content' => CI_META_TITLE,
+		];
+		$meta_arr[] = [
+			'name' => "description",
+			'content' => CI_META_DESCRIPTION,
+		];
+		$meta_arr[] = [
+			'name' => "keywords",
+			'content' => CI_META_KEYWORDS,
+		];
+		$meta_arr[] = [
+			'name' => "robots",
+			'content' => CI_META_ROBOTS,
+		];
+		$meta_arr[] = [
+			'name' => "viewport",
+			'content' => CI_META_VIEWPORT,
+		];
+		foreach ($meta_arr as $name => $content) {
+			echo meta($content);
+		}
+	?>
+	
 	<link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link href="<?php echo "{$base_url}assets/vendor/simple-line-icons/simple-line-icons.min.css"; ?>" rel="stylesheet" type="text/css"/>
@@ -25,6 +51,7 @@ $base_url = CI_BASE_URL;
     <script>
         var ci_base_url = "<?php echo CI_BASE_URL; ?>";
     </script>
+	<script src="<?php echo "{$base_url}assets/vendor/jquery.min.js"; ?>" type="text/javascript"></script>
 </head>
 
 <body id="body" data-spy="scroll" data-target=".header">
