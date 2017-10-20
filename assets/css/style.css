@@ -29,7 +29,7 @@
 
 .header .logo-img {
     display: inline-block;
-    width: 180px;
+    width: 320px;
     height: auto;
     max-width: 100%;
     max-height: 100%;
@@ -37,7 +37,7 @@
 }
 
 .header .logo-img-main {
-    width: 250px !important;
+    width: 420px !important;
 }
 
 .header .logo-img-active {
@@ -89,4 +89,11 @@
 .accordion .collapse.in, .accordion [aria-expanded=true] {
     color: #fff;
     background: #ffd400;
+}
+
+.fa-service{
+    display: block;
+    font-size: 30px !important;
+    color: #999caa;
+    margin-bottom: 30px;
 }

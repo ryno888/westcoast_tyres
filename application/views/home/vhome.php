@@ -30,6 +30,7 @@ $base_url = CI_BASE_URL;
                     <img class="img-responsive" src="<?php echo "{$base_url}assets/img/1920x1080/02.jpg" ?>" alt="Slider Image">
                     <div class="container">
                         <div class="carousel-centered">
+							
                             <div class="margin-b-40">
                                 <h1 class="carousel-title">Continental Tyres</h1>
                                 <p class="color-white">The fastest way to the perfect tire.</p>
@@ -61,10 +62,10 @@ $base_url = CI_BASE_URL;
 							<div class="col-sm-4 sm-margin-b-2">
 								<div class="service" data-height="height">
 									<div class="service-element">
-										<i class="service-icon icon-chemistry"></i>
+										<i class="fa fa-balance-scale fa-service" aria-hidden="true"></i>
 									</div>
 									<div class="service-info">
-										<h3>Company Formation</h3>
+										<h3>Wheel Balancing</h3>
 										<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
 									</div>
 								</div>
@@ -105,10 +106,10 @@ $base_url = CI_BASE_URL;
 							<div class="col-sm-4 sm-margin-b-2">
 								<div class="service" data-height="height">
 									<div class="service-element">
-										<i class="service-icon icon-chemistry"></i>
+										<i class="fa fa-refresh fa-service" aria-hidden="true"></i>
 									</div>
 									<div class="service-info">
-										<h3>Company Formation</h3>
+										<h3>Tyre Rotation</h3>
 										<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
 									</div>
 								</div>
@@ -149,10 +150,10 @@ $base_url = CI_BASE_URL;
 							<div class="col-sm-4 sm-margin-b-2">
 								<div class="service" data-height="height">
 									<div class="service-element">
-										<i class="service-icon icon-chemistry"></i>
+										<i class="fa fa-wrench fa-service" aria-hidden="true"></i>
 									</div>
 									<div class="service-info">
-										<h3>Company Formation</h3>
+										<h3>Punctures & Repairs</h3>
 										<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
 									</div>
 								</div>
@@ -197,10 +198,10 @@ $base_url = CI_BASE_URL;
 							<div class="col-sm-4 sm-margin-b-2">
 								<div class="service" data-height="height">
 									<div class="service-element">
-										<i class="service-icon icon-chemistry"></i>
+										<i class="fa fa-download fa-service" aria-hidden="true"></i>
 									</div>
 									<div class="service-info">
-										<h3>Company Formation</h3>
+										<h3>Lowering Kits</h3>
 										<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
 									</div>
 								</div>
@@ -241,10 +242,10 @@ $base_url = CI_BASE_URL;
 							<div class="col-sm-4 sm-margin-b-2">
 								<div class="service" data-height="height">
 									<div class="service-element">
-										<i class="service-icon icon-chemistry"></i>
+										<i class="fa fa-arrows-v fa-service" aria-hidden="true"></i>
 									</div>
 									<div class="service-info">
-										<h3>Company Formation</h3>
+										<h3>Shocks</h3>
 										<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
 									</div>
 								</div>
@@ -285,10 +286,10 @@ $base_url = CI_BASE_URL;
 							<div class="col-sm-4 sm-margin-b-2">
 								<div class="service" data-height="height">
 									<div class="service-element">
-										<i class="service-icon icon-chemistry"></i>
+										<i class="fa fa-gear fa-service" aria-hidden="true"></i>
 									</div>
 									<div class="service-info">
-										<h3>Company Formation</h3>
+										<h3>Mag rims</h3>
 										<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
 									</div>
 								</div>
@@ -330,120 +331,6 @@ $base_url = CI_BASE_URL;
             </div>
         </div>
         <!-- End Service -->
-		
-		
-        <!-- Latest Products -->
-<!--        <div id="products">
-            <div class="content-lg container">
-                <div class="row margin-b-40">
-                    <div class="col-sm-6">
-                        <h2>Recent Projects</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
-                    </div>
-                </div>
-                // end row 
-
-                <div class="row">
-                     Latest Products 
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="margin-b-20">
-                            <img class="img-responsive" src="<?php echo "{$base_url}assets/img/970x647/01.jpg" ?>" alt="Latest Products Image">
-                        </div>
-                        <h4><a href="#">Interior</a> <span class="text-uppercase margin-l-20">Architecture</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Details</a>
-                    </div>
-                     End Latest Products 
-
-                     Latest Products 
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="margin-b-20">
-                            <img class="img-responsive" src="<?php echo "{$base_url}assets/img/970x647/02.jpg" ?>" alt="Latest Products Image">
-                        </div>
-                        <h4><a href="#">Trend</a> <span class="text-uppercase margin-l-20">Setting</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Details</a>
-                    </div>
-                     End Latest Products 
-
-                     Latest Products 
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="margin-b-20">
-                            <img class="img-responsive" src="<?php echo "{$base_url}assets/img/970x647/03.jpg" ?>" alt="Latest Products Image">
-                        </div>
-                        <h4><a href="#">Fresh Style</a> <span class="text-uppercase margin-l-20">Philosophy</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Details</a>
-                    </div>
-                     End Latest Products 
-                </div>
-                // end row 
-            </div>
-        </div>
-         End Latest Products 
-
-         Pricing 
-        <div id="pricing">
-            <div class="bg-color-sky-light">
-                <div class="content-lg container">
-                    <div class="row row-space-1">
-                        <div class="col-sm-4 sm-margin-b-2">
-                             Pricing 
-                            <div class="pricing">
-                                <div class="margin-b-30">
-                                    <i class="pricing-icon icon-chemistry"></i>
-                                    <h3>Silver Package <span> - $</span> 74.99</h3>
-                                    <p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <ul class="list-unstyled pricing-list margin-b-50">
-                                    <li class="pricing-list-item">Starter Kit</li>
-                                    <li class="pricing-list-item">Basic Features</li>
-                                    <li class="pricing-list-item">Annual Report</li>
-                                </ul>
-                                <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Start Now</a>
-                            </div>
-                             End Pricing 
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-2">
-                             Pricing 
-                            <div class="pricing pricing-active">
-                                <div class="margin-b-30">
-                                    <i class="pricing-icon icon-badge"></i>
-                                    <h3>Gold Package <span> - $</span> 199.99</h3>
-                                    <p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <ul class="list-unstyled pricing-list margin-b-50">
-                                    <li class="pricing-list-item">Professional Kit</li>
-                                    <li class="pricing-list-item">Full Options</li>
-                                    <li class="pricing-list-item">Bi-anual Report</li>
-                                </ul>
-                                <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Start Now</a>
-                            </div>
-                             End Pricing 
-                        </div>
-                        <div class="col-sm-4">
-                             Pricing 
-                            <div class="pricing">
-                                <div class="margin-b-30">
-                                    <i class="pricing-icon icon-shield"></i>
-                                    <h3>Platinum Package <span> - $</span> 500</h3>
-                                    <p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <ul class="list-unstyled pricing-list margin-b-50">
-                                    <li class="pricing-list-item">Complete Kit</li>
-                                    <li class="pricing-list-item">Advanced Options</li>
-                                    <li class="pricing-list-item">Monthly Report</li>
-                                </ul>
-                                <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Start Now</a>
-                            </div>
-                             End Pricing 
-                        </div>
-                    </div>
-                    // end row 
-                </div>
-            </div>
-        </div>-->
-        <!-- End Pricing -->
 
         <!-- Work -->
         <div id="products">
@@ -451,7 +338,7 @@ $base_url = CI_BASE_URL;
                 <div class="content-md container">
                     <div class="row margin-b-40">
                         <div class="col-sm-6">
-                            <h2>Portfolio</h2>
+                            <h2>Featured Products</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
                         </div>
                     </div>
@@ -943,9 +830,9 @@ $base_url = CI_BASE_URL;
             <!-- End Contact List -->
             
             <!-- Google Map -->
-            <div class="map height-300">
+<!--            <div class="map height-300">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.0694570748947!2d7.455080415208266!3d46.94067397914616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39d0cf20e8d1%3A0x9daac4cd3043d067!2sThunstrasse+50%2C+3005+Bern%2C+Switzerland!5e0!3m2!1sen!2sin!4v1496749852928" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
+			</div>-->
         </div>
         <!-- End Contact -->
         <!--========== END PAGE LAYOUT ==========-->
