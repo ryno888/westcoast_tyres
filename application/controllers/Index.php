@@ -51,6 +51,10 @@ class Index extends CI_Controller {
         echo $result ? "true" : "false";
     }
     //--------------------------------------------------------------------------
+    public function xcontact() {
+        console($_REQUEST);
+    }
+    //--------------------------------------------------------------------------
     public function xlogout() {
         $session = Lib_session::get_session();
         $session->sess_destroy();
