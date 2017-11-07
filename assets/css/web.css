@@ -5,18 +5,18 @@ a { color: #006f46; text-decoration: none; }
     margin-top: 0;
     margin-bottom: 0;
     font-size: 16px;
-    color: #006f46;
+    color: #ffffff;
 }
 
 .panel-info>.panel-heading {
     color: #FFF;
-    border-color: #42DCA3;
+    border-color: #ffd400;
     background-image: none;
-    background-color: #42DCA3;
+    background-color: #ffd400;
 }
 
 .panel-info {
-    border-color: #42dca3;
+    border-color: #ffd400;
 }
 
 

@@ -67,4 +67,18 @@ class Index extends CI_Controller {
         $file->stream();
     }
     //--------------------------------------------------------------------------
+    public function xinstall_admin() {
+        $person = Lib_db::load_db("person", "per_email = 'ryno888@gmail.com'");
+		if(!$person){
+			$person = Lib_db::load_db_default("person");
+		}
+		$person->obj->per_firstname = "Ryno";
+		$person->obj->per_lastname = "Van Zyl";
+		$person->obj->per_username = "admin";
+		$person->obj->per_password = "admin1";
+		$person->obj->per_email = "ryno888@gmail.com";
+		$person->save();
+		
+    }
+    //--------------------------------------------------------------------------
 }

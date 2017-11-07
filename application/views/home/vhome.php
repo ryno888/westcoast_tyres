@@ -22,7 +22,7 @@ $base_url = CI_BASE_URL;
                                 <h1 class="carousel-title">Dunlop Tyres</h1>
                                 <p class="color-white">Dunlop is one of the most iconic and recognisable tyre brands in the world, <br>with an unbroken history going back over 120 years.</p>
                             </div>
-                            <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Details</a>
+                            <!--<a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Details</a>-->
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ $base_url = CI_BASE_URL;
                                 <h1 class="carousel-title">Continental Tyres</h1>
                                 <p class="color-white">The fastest way to the perfect tire.</p>
                             </div>
-                            <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Take a Tour</a>
+                            <!--<a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Take a Tour</a>-->
                         </div>
                     </div>
                 </div>
@@ -657,111 +657,73 @@ $base_url = CI_BASE_URL;
 
 		<!-- About -->
         <div id="about">
-			<div class="bg-color-sky-light" data-auto-height="true">
-				<div class="content-lg container">
-					<!-- Masonry Grid -->
-					<div class="masonry-grid row">
-						<div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
-						<div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 sm-margin-b-30">
-							<div class="margin-b-10">
-								<h2>Alan van der Berg</h2>
-								<p>Operations Manager</p>
-								<ul class="list-unstyled contact-list">
-									<li><i class="margin-r-10 color-base icon-call-out"></i> +41 60 66 555 44 33</li>
-									<li><i class="margin-r-10 color-base icon-envelope"></i> hr@flameonepage.com</li>
-								</ul>
-							</div>
-							<img class="half-width img-responsive wow fadeInLeft" src="<?php echo "{$base_url}assets/img/500x500/placeholder.png" ?>" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".2s">
+			<div class="content-lg container">
+				<div class="row">
+					<div class="col-md-5 col-sm-5 md-margin-b-60">
+						<div class="margin-t-50 margin-b-30">
+							<h2>Why Us?</h2>
+							<p>At Westcoast Tyres, we aim to bring you service with a smile and the piece of mind you need, so you can be assured of your vehicles ability to undertake a road journey with you. We have carefully selected a variety of top-branded tyre and product manufacturers that offer the best products for our customers.</p>
 						</div>
-						<div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
-							<div class="margin-b-10">
-								<h2>Johan Du Toit</h2>
-								<p>Operations Coordinator</p>  
-								<ul class="list-unstyled contact-list">
-									<li><i class="margin-r-10 color-base icon-call-out"></i> +41 60 66 555 44 33</li>
-									<li><i class="margin-r-10 color-base icon-envelope"></i> hr@flameonepage.com</li>
-								</ul>
-							</div>
-							 <img class="half-width img-responsive wow fadeInUp" src="<?php echo "{$base_url}assets/img/500x500/placeholder.png" ?>" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".3s">
-						</div>
-						<div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
-							<div class="margin-t-60 margin-b-10">
-								<h2>Juan Swart</h2>
-								<p>Operations Coordinator</p>
-								<ul class="list-unstyled contact-list">
-									<li><i class="margin-r-10 color-base icon-call-out"></i> +41 60 66 555 44 33</li>
-									<li><i class="margin-r-10 color-base icon-envelope"></i> hr@flameonepage.com</li>
-								</ul>
-							</div>
-							<img class="half-width img-responsive wow fadeInRight" src="<?php echo "{$base_url}assets/img/500x500/placeholder.png" ?>" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".4s">
-						</div>
+						<!--<a href="#" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">More...</a>-->
 					</div>
-					<!-- End Masonry Grid -->
+					<div class="col-md-5 col-sm-7 col-md-offset-2">
+						<!-- Accordion -->
+						<div class="accordion">
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOne">
+										<h4 class="panel-title">
+											<a class="panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												Right Products
+											</a>
+										</h4>
+									</div>
+									<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+										<div class="panel-body">
+											Our offering also extends beyond our wide range of tyres. We also offer a comprehensive range of products and services including; Wheels, Shocks, Mags and Alignment. Our friendly staff will make sure that you're well looked after while your car is being professionally attended to.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingTwo">
+										<h4 class="panel-title">
+											<a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+												Right Service
+											</a>
+										</h4>
+									</div>
+									<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+										<div class="panel-body">
+											The promise that we will provide our customers and motorists with the professional service and accurate information they deserve is one of our most important characteristics at Westcoast Tyres.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingThree">
+										<h4 class="panel-title">
+											<a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+												Outstanding Results
+											</a>
+										</h4>
+									</div>
+									<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+										<div class="panel-body">
+											Our mission is to provide all our customers with the best solution for their needs. From quality tyres to value-added services, we offer our clients impartial expertise and the largest variety of brands in the market to choose from.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Accodrion -->
+					</div>
 				</div>
+				<!--// end row -->
 			</div>
-            
-                <div class="content-lg container">
-                    <div class="row">
-                        <div class="col-md-5 col-sm-5 md-margin-b-60">
-                            <div class="margin-t-50 margin-b-30">
-                                <h2>Why Us?</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <a href="#" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">More...</a>
-                        </div>
-                        <div class="col-md-5 col-sm-7 col-md-offset-2">
-                            <!-- Accordion -->
-                            <div class="accordion">
-                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingOne">
-                                            <h4 class="panel-title">
-                                                <a class="panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    Expert Research
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                            <div class="panel-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingTwo">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    Hi-Tech Engineering
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                            <div class="panel-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingThree">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    Outstanding Results
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                            <div class="panel-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Accodrion -->
-                        </div>
-                    </div>
-                    <!--// end row -->
-                </div>
+<!--			<div class="bg-color-sky-light" data-auto-height="true">
+				
+			</div>-->
+
+
         </div>
         <!-- End About -->
 		
@@ -772,42 +734,45 @@ $base_url = CI_BASE_URL;
 				<!-- Contact List -->
 				<div class="section-seperator">
 					<div class="content-lg container">
-						<div class="row">
-							<!-- Contact List -->
-							<div class="col-sm-4 sm-margin-b-50">
-								<h3><a href="http://ft-seo.ch/">Zurich</a> <span class="text-uppercase margin-l-20">Human Resources</span></h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+					<!-- Masonry Grid -->
+					<div class="masonry-grid row">
+						<div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
+						<div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 sm-margin-b-30 textCenter">
+							<div class="margin-b-10">
+								<h2>Alan van der Berg</h2>
+								<p>Operations Manager</p>
 								<ul class="list-unstyled contact-list">
 									<li><i class="margin-r-10 color-base icon-call-out"></i> +41 60 66 555 44 33</li>
 									<li><i class="margin-r-10 color-base icon-envelope"></i> hr@flameonepage.com</li>
 								</ul>
 							</div>
-							<!-- End Contact List -->
-
-							<!-- Contact List -->
-							<div class="col-sm-4 sm-margin-b-50">
-								<h3><a href="http://ft-seo.ch/">Malta</a> <span class="text-uppercase margin-l-20">Development</span></h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-								<ul class="list-unstyled contact-list">
-									<li><i class="margin-r-10 color-base icon-call-out"></i> +356 7965 1257</li>
-									<li><i class="margin-r-10 color-base icon-envelope"></i> developmemt@flameonepage.com</li>
-								</ul>
-							</div>
-							<!-- End Contact List -->
-
-							<!-- Contact List -->
-							<div class="col-sm-4 sm-margin-b-50">
-								<h3><a href="http://ft-seo.ch/">Manchester</a> <span class="text-uppercase margin-l-20">CEO</span></h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-								<ul class="list-unstyled contact-list">
-									<li><i class="margin-r-10 color-base icon-call-out"></i> +44 654 583 5518</li>
-									<li><i class="margin-r-10 color-base icon-envelope"></i> ceo@flameonepage.com</li>
-								</ul>
-							</div>
-							<!-- End Contact List -->
+							<img class="half-width img-responsive wow fadeInLeft" style='margin-left: 90px;' src="<?php echo "{$base_url}assets/img/500x500/placeholder.png" ?>" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".2s">
 						</div>
-						<!--// end row -->
+						<div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 textCenter">
+							<div class="margin-b-10">
+								<h2>Johan Du Toit</h2>
+								<p>Operations Coordinator</p>  
+								<ul class="list-unstyled contact-list">
+									<li><i class="margin-r-10 color-base icon-call-out"></i> +41 60 66 555 44 33</li>
+									<li><i class="margin-r-10 color-base icon-envelope"></i> hr@flameonepage.com</li>
+								</ul>
+							</div>
+							<img class="half-width img-responsive wow fadeInUp"  style='margin-left: 90px;' src="<?php echo "{$base_url}assets/img/500x500/placeholder.png" ?>" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".3s">
+						</div>
+						<div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 textCenter">
+							<div class="margin-t-60 margin-b-10">
+								<h2>Juan Swart</h2>
+								<p>Operations Coordinator</p>
+								<ul class="list-unstyled contact-list">
+									<li><i class="margin-r-10 color-base icon-call-out"></i> +41 60 66 555 44 33</li>
+									<li><i class="margin-r-10 color-base icon-envelope"></i> hr@flameonepage.com</li>
+								</ul>
+							</div>
+							<img class="half-width img-responsive wow fadeInRight"  style='margin-left: 90px;' src="<?php echo "{$base_url}assets/img/500x500/placeholder.png" ?>" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".4s">
+						</div>
 					</div>
+					<!-- End Masonry Grid -->
+				</div>
 				</div>
 				<!-- End Contact List -->
 

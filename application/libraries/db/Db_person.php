@@ -28,15 +28,7 @@ class Db_person extends Dbx_person{
             "per_password"      => ["name" => "password"    , "default" => ""       , "type" => DB_ENCRYPT],
             "per_online"        => ["name" => "is online"   , "default" => 0        , "type" => DB_TINYINT],
             "per_date_created"  => ["name" => "date created", "default" => ""       , "type" => DB_DATETIME],
-            
             "per_birthday"          => ["name" => "birthday"        , "default" => ""       , "type" => DB_DATE],
-            "per_year_in_class"     => ["name" => "year"            , "default" => ""       , "type" => DB_YEAR],
-            "per_cemis_nr"          => ["name" => "cms number"      , "default" => ""       , "type" => DB_VARCHAR],
-            "per_grade"             => ["name" => "grade"           , "default" => 0       , "type" => DB_TINYINT],
-            "per_previous_grade"    => ["name" => "previous grade"  , "default" => 0       , "type" => DB_TINYINT],
-            "per_grade_repeated"    => ["name" => "grade repeated"  , "default" => 0       , "type" => DB_TINYINT],
-            "per_year_in_phase"     => ["name" => "year in phase"   , "default" => ""       , "type" => DB_VARCHAR],
-            "per_prev_school"       => ["name" => "previous school" , "default" => ""       , "type" => DB_VARCHAR],
         ]);
     }
     //----------------------------------------------------------------------------------------

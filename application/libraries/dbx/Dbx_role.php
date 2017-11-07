@@ -15,7 +15,7 @@ class Dbx_role extends Lib_db{
             "rol_id"            => ["name" => "id"      , "default" => "null"   , "type" => DB_INT],
             "rol_name"          => ["name" => "name"    , "default" => ""       , "type" => DB_VARCHAR],
             "rol_code"          => ["name" => "code"    , "default" => ""       , "type" => DB_VARCHAR],
-            "rol_level"         => ["name" => "id"      , "default" => "null"   , "type" => DB_INT],
+            "rol_level"         => ["name" => "level"	, "default" => 0		, "type" => DB_INT],
         ]);
     }
     //----------------------------------------------------------------------------

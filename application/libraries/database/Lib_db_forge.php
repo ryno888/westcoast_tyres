@@ -20,13 +20,11 @@ class Lib_db_forge extends Lib_core{
         ], $options);
         
         parent::__construct();
-        
-        if(!$options_arr["table"]) { error_log("table not supplied"); } 
-        $this->table = $options_arr["table"];
-        $this->db_obj = Lib_db::load_db_default($options_arr["table"]);
-        $this->key = $this->db_obj->get_key();
-        $this->fields_arr = $this->db_obj->get_fields_arr();
-        
+        $this->table = $options_arr["table"] ? $options_arr["table"] : false;
+    }
+    //--------------------------------------------------------------------------
+    public function run() {
+		if(!$this->table) { error_log("table not supplied"); } 
         $this->ci->load->dbforge();
         $this->dbforge = $this->ci->dbforge;
         $this->generate_fields_sql();
@@ -72,5 +70,63 @@ class Lib_db_forge extends Lib_core{
         $this->dbforge->add_field($fields_arr);
         $this->dbforge->add_key($this->key, TRUE);
     }
+    //--------------------------------------------------------------------------
+	public function get_table() {
+		return $this->table;
+	}
+    //--------------------------------------------------------------------------
+	public function get_key() {
+		return $this->key;
+	}
+    //--------------------------------------------------------------------------
+	public function get_fields_arr() {
+		return $this->fields_arr;
+	}
+    //--------------------------------------------------------------------------
+	public function get_db_obj() {
+		return $this->db_obj;
+	}
+    //--------------------------------------------------------------------------
+	public function get_dbforge() {
+		return $this->dbforge;
+	}
+    //--------------------------------------------------------------------------
+	public function get_post_queries() {
+		return $this->post_queries;
+	}
+    //--------------------------------------------------------------------------
+	public function set_table($table) {
+		$this->table = $table;
+		$this->db_obj = Lib_db::load_db_default($table);
+        $this->key = $this->db_obj->get_key();
+        $this->fields_arr = $this->db_obj->get_fields_arr();
+	}
+    //--------------------------------------------------------------------------
+	public function set_key($key) {
+		$this->key = $key;
+	}
+    //--------------------------------------------------------------------------
+	public function set_fields_arr($fields_arr) {
+		$this->fields_arr = $fields_arr;
+	}
+    //--------------------------------------------------------------------------
+	public function set_db_obj($db_obj) {
+		$this->db_obj = $db_obj;
+	}
+    //--------------------------------------------------------------------------
+	public function set_dbforge($dbforge) {
+		$this->dbforge = $dbforge;
+	}
+    //--------------------------------------------------------------------------
+	public function set_post_queries($post_queries) {
+		$this->post_queries = $post_queries;
+	}
+    //--------------------------------------------------------------------------
+	public function create_multiple($table_arr = []) {
+		foreach ($table_arr as $table) {
+			$this->set_table($table);
+			$this->run();
+		}
+	}
     //--------------------------------------------------------------------------
 }

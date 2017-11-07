@@ -83,8 +83,8 @@ $base_url = CI_BASE_URL;
 							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
 							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#services">Services</a></li>
 							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#products">Products</a></li>
-							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">Team</a></li>
-							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover1" href="#contact">About Us</a></li>
+							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About Us</a></li>
+							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover1" href="#contact">Contact</a></li>
 						</ul>
 					</div>
 				</div>

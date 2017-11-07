@@ -175,6 +175,14 @@ class Lib_db{
         $this->id = $this->obj->{$this->key} = $database->insert($this->table, $this->obj);
     }
     //--------------------------------------------------------------------------
+    public function save() {
+		if(!isset($this->obj->{$this->key}) || $this->obj->{$this->key} == "null"){
+            $this->insert();
+        }else{
+			$this->update();
+		}
+    }
+    //--------------------------------------------------------------------------
     public function update() {
         $database = new Lib_database();
         $this->on_update($this->obj);
