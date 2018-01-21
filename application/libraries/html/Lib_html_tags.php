@@ -607,9 +607,10 @@ class Lib_html_tags extends Lib_core{
         $options_arr = array_merge([
             'show_loader' => true,
             'loader_message' => 'Compressing image. Please wait...',
-            'url_upload' => Http_helper::build_url("cms/xupload_file"),
+            'url_upload' => Http_helper::build_url("index/xupload_file"),
             'url_delete' => false,
             'data' => false,
+            'max_files' => "null",
         ], $options);
         
         $dest_encoded = urlencode($dest);
@@ -651,6 +652,7 @@ class Lib_html_tags extends Lib_core{
                 $(document).ready(function(){
                     Dropzone.autoDiscover = false;
                     $('div#$id').dropzone({
+						maxFiles: {$options_arr["max_files"]},
                         url: '{$options_arr["url_upload"]}',
                         margin: 20,
                         params:{'action': 'save'},

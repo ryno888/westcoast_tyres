@@ -476,6 +476,13 @@ if ( ! function_exists('log_message'))
 		}
 
 		$_log[0]->write_log($level, $message);
+		
+		if($level == "error"){
+			ob_start();
+			debug_print_backtrace();
+			$data = ob_get_clean();
+			$_log[0]->write_log($level, $data);
+		}
 	}
 }
 
@@ -1026,6 +1033,16 @@ if ( ! function_exists('function_usable'))
             }
             $result = $ci_controller->get_post($var);
             return $result ? $result : $default;
+        }
+
+    }
+    // ------------------------------------------------------------------------
+
+    if (!function_exists('request_files')) {
+
+        function request_files($var) {
+            $file_dir = urldecode(request("$var"));
+			return glob($file_dir."/*");
         }
 
     }

@@ -12,7 +12,7 @@ class Index extends CI_Controller {
         if(!$active_id){
             Http_helper::redirect("index.php/home/vhome");
         }
-        Http_helper::redirect("index.php/cms/vlist_service");
+        Http_helper::redirect("index.php/dashboard/vdashboard");
     }
     //--------------------------------------------------------------------------
     public function vhome() {
@@ -79,6 +79,25 @@ class Index extends CI_Controller {
 		$person->obj->per_email = "ryno888@gmail.com";
 		$person->save();
 		
+    }
+	//--------------------------------------------------------------------------
+    public function xupload_file() {
+        $this->load->helper("File_function");
+        $dest = urldecode(request("dest"));
+        File_function_helper::mkdir($dest);
+        
+        echo "<pre>";
+        print_r($_FILES);
+        print_r($_POST);
+        echo "</pre>";
+
+        
+        @mkdir(DIR_FILES."upload/");
+        if(!move_uploaded_file($_FILES['file']['tmp_name'], "$dest/{$_FILES['file']['name']}")){
+            echo "error";
+        }
+        
+        echo "success";
     }
     //--------------------------------------------------------------------------
 }

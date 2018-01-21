@@ -75,7 +75,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </body>
     <script type="text/javascript" src="<?php echo $base_url; ?>assets/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php echo $base_url; ?>assets/js/dropzone.js"></script>
-    <script type="text/javascript" src="<?php echo $base_url; ?>assets/js/nanoscroller.js"></script>
     <script type="text/javascript" src="<?php echo $base_url; ?>assets/js/datetimepicker/moment-with-locales.js"></script>
     <script type="text/javascript" src="<?php echo $base_url; ?>assets/js/datetimepicker/bootstrap-datetimepicker.js"></script>
     <script type="text/javascript" src="<?php echo $base_url; ?>assets/js/system.js"></script>

@@ -32,13 +32,13 @@ legend {
 error-wrapper.div.container{ margin-top:20px; }
 
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
-    background-color: #1b7755;
+    background-color: #FD871F;
     color: #ffffff;
 }
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
     text-decoration: none;
     color: #ffffff;
-    background-color: #1b7755;
+    background-color: #FD871F;
 }
 
 
@@ -220,8 +220,8 @@ error-wrapper.div.container{ margin-top:20px; }
 
 .navbar-inverse {
     background-image: none;
-    background-color: #42DCA3;
-    border-color: #42DCA3;
+    background-color: #ffd400;
+    border-color: #ffd400;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -427,6 +427,10 @@ error-wrapper.div.container{ margin-top:20px; }
 
 .panel-info>.panel-heading {
     color: #000000;
-    background-color: #42DCA3;
-    border-color: #42DCA3;
+    background-color: #ffd400;
+    border-color: #ffd400;
+}
+
+.panel-info {
+    border-color: #ffd400;
 }

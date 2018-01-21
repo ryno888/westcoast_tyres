@@ -19,6 +19,7 @@
  */
 class Image_compression_helper {
 
+    public $src;
     public $image;
     public $image_type;
 
@@ -31,6 +32,7 @@ class Image_compression_helper {
     public function load($filename) {
         $image_info = getimagesize($filename);
         $this->image_type = $image_info[2];
+		$this->src = $filename;
 
         if ($this->image_type == IMAGETYPE_JPEG) {
             $this->image = imagecreatefromjpeg($filename);
@@ -86,6 +88,127 @@ class Image_compression_helper {
         }
     }
 
+	//--------------------------------------------------------------------------------
+	public function upload_and_compress($dest, $options = []) {
+        // options
+		$options = array_merge([
+            "crop" => "square",
+            "width" => false,
+            "height" => false,
+            "size" => 200,
+		], $options);
+
+		File_function_helper::mkdir(dirname($dest));
+        
+        switch ($options['crop']) {
+            case 'square': $this->square($options['size']); break;
+            case 'scale': $this->scale($options['size']); break;
+            case 'to_height': 
+                $image_info = getimagesize($this->src);
+                if($image_info[0] > 1000){
+					$this->tofixedscaled($this->src, $this->src, 1000);
+                }
+                $this->resizeToHeight($options['height']); break;
+            case 'resize': $this->resize($options['width'], $options['height']); break;
+            case 'resize_to_width': $this->resizeToWidth($options['width']); break;
+            case 'resize_to_height': $this->resizeToHeight($options['height']); break;
+            case 'from_center': 
+                $image_info = getimagesize($this->src);
+                if($image_info[0] < $options['width']){
+                    $this->resizeToWidth(($options['width'] * 1.5)); 
+                }
+                if($image_info[1] < $options['height']){
+                    $this->resizeToHeight(($options['height'] * 1.5)); 
+                }
+                $this->cutFromCenter($options['width'], $options['height']); 
+                break;
+            case 'crop_to_max_height': 
+                $this->cropToHeight($options['width'], $options['height']);
+                break;
+            case 'crop_to_max_width': 
+                $this->cropToWidth($options['width'], $options['height']); 
+                break;
+            default: $this->square($options['size']); break;
+        }
+        $this->save($dest, IMAGETYPE_PNG);
+	}
+	
+	
+	//--------------------------------------------------------------------------------
+    
+    public static function tofixedscaled($src_image, $dest_image, $scale_width, $options = []) {
+		// options
+		$options = array_merge([
+			"scale_height" => false,
+			"quality" => 75,
+		], $options);
+
+		// resamples a source image to a given fixed and height
+		$supported_types = ["image/jpeg", "image/gif", "image/png"];
+
+		// get src image size
+		$image_info = getimagesize($src_image);
+		if (!in_array($image_info["mime"], $supported_types)) return [false, "File type $image_info[mime] not supported image type (supported types are ".implode(" ,", $supported_types).")"];
+		list($src_width, $src_height) = $image_info;
+
+		// image is right scale and doesnt need to be scaled
+		if ($src_width == $scale_width && !$options["scale_height"] || $src_width == $scale_width && $src_height == $options["scale_height"]) {
+			copy($src_image, $dest_image);
+			return [true, ""];
+		}
+
+		// resample src image
+		$new_width = $src_width;
+		$new_height = $src_height;
+		if ($scale_width < $new_width) {
+			$scale = $scale_width / $new_width;
+			$new_width = $scale_width;
+			$new_height = floor($new_height * $scale);
+		}
+		if ($options["scale_height"] && $options["scale_height"] < $new_height) {
+			$scale = $options["scale_height"] / $new_height;
+			$new_height = $options["scale_height"];
+			$new_width = floor($new_width * $scale);
+		}
+
+		if ($new_width == $src_width && $new_height == $src_height) {
+			copy($src_image, $dest_image);
+			return [true, ""];
+		}
+
+		$new_image = imagecreatetruecolor($new_width, $new_height);
+        
+        //if ($image_info["mime"] == "image/gif" || $image_info["mime"] == "image/png") {
+        //imagecolortransparent($new_image, imagecolorallocatealpha($new_image, 0, 0, 0));
+        imagealphablending($new_image, false);
+        imagesavealpha($new_image, true);
+		//}
+        
+		switch ($image_info["mime"]) {
+			case "image/jpeg" : $old_image = imagecreatefromjpeg($src_image);
+				break;
+			case "image/gif" : $old_image = imagecreatefromgif($src_image);
+				break;
+			case "image/png" : $old_image = imagecreatefrompng($src_image);
+				break;
+		}
+		imagecopyresampled($new_image, $old_image, 0, 0, 0, 0, $new_width, $new_height, $src_width, $src_height);        
+
+		// write image to jpg image
+        switch ($image_info["mime"]) {
+			case "image/jpeg" : imagejpeg($new_image, $dest_image, $options["quality"]);
+				break;
+			case "image/gif" : $old_image = imagecreatefromgif($src_image);
+				break;
+			case "image/png" : imagepng($new_image, $dest_image, 2);
+				break;
+		}
+		
+
+		return [true, ""];
+	}
+	
+	
     public function output($image_type = IMAGETYPE_JPEG, $quality = 80) {
         if ($image_type == IMAGETYPE_JPEG) {
             header("Content-type: image/jpeg");
@@ -215,6 +338,30 @@ class Image_compression_helper {
         imagecopyresampled($new_image, $this->image, floor(($width - $this->getWidth()) / 2), floor(($height - $this->getHeight()) / 2), 0, 0, $this->getWidth(), $this->getHeight(), $this->getWidth(), $this->getHeight()
         );
         $this->image = $new_image;
+    }
+	//--------------------------------------------------------------------------------
+    public function cropToHeight($width, $height) {
+
+        if ($height < $this->getHeight()) {
+            $this->resizeToHeight($height);
+        }
+
+        $x = ($this->getWidth() / 2) - ($width / 2);
+        $y = ($this->getHeight() / 2) - ($height / 2);
+
+        return $this->cut($x, $y, $width, $height);
+    }
+    //--------------------------------------------------------------------------------
+    public function cropToWidth($width, $height) {
+
+        if ($width < $this->getWidth()) {
+            $this->resizeToWidth($width);
+        }
+
+        $x = ($this->getWidth() / 2) - ($width / 2);
+        $y = ($this->getHeight() / 2) - ($height / 2);
+
+        return $this->cut($x, $y, $width, $height);
     }
 
 }

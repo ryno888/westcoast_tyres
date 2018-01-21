@@ -1,1 +1,0 @@
-ERROR - 2017-11-07 22:11:26 --> Query error: Table 'loc_westcoast_tyres.service_type' doesn't exist - Invalid query: SELECT  service_type.* FROM service_type   LIMIT 1 
