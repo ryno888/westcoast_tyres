@@ -11,35 +11,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="section-seperator">
                 <div class="content-md container">
                     <div class="row">
-                        <div class="col-sm-2 sm-margin-b-30">
-                            <!-- List -->
+<!--                        <div class="col-sm-2 sm-margin-b-30">
+                             List 
                             <ul class="list-unstyled footer-list">
                                 <li class="footer-list-item"><a href="#body">Home</a></li>
                                 <li class="footer-list-item"><a href="#about">Team</a></li>
                                 <li class="footer-list-item"><a href="#work">Credentials</a></li>
                                 <li class="footer-list-item"><a href="#contact">Contact</a></li>
                             </ul>
-                            <!-- End List -->
+                             End List 
                         </div>
                         <div class="col-sm-2 sm-margin-b-30">
-                            <!-- List -->
+                             List 
                             <ul class="list-unstyled footer-list">
                                 <li class="footer-list-item"><a href="#">Twitter</a></li>
                                 <li class="footer-list-item"><a href="#">Facebook</a></li>
                                 <li class="footer-list-item"><a href="#">Instagram</a></li>
                                 <li class="footer-list-item"><a href="#">YouTube</a></li>
                             </ul>
-                            <!-- End List -->
+                             End List 
                         </div>
                         <div class="col-sm-3">
-                            <!-- List -->
+                             List 
                             <ul class="list-unstyled footer-list">
                                 <li class="footer-list-item"><a href="#">Subscribe to Our Newsletter</a></li>
                                 <li class="footer-list-item"><a href="#">Privacy Policy</a></li>
                                 <li class="footer-list-item"><a href="#">Terms &amp; Conditions</a></li>
                             </ul>
-                            <!-- End List -->
-                        </div>
+                             End List 
+                        </div>-->
                     </div>
                     <!--// end row -->
                 </div>
@@ -47,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <!-- End Links -->
 
             <!-- Copyright -->
-            <div class="content container">
+<!--            <div class="content container">
                 <div class="row">
                     <div class="col-xs-6">
                         <img class="footer-logo" src="img/logo-dark.png" alt="flameonepage Logo">
@@ -56,8 +56,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <p class="margin-b-0"><a class="fweight-700" href="#">FlameOnePage</a> Theme Powered by: <a class="fweight-700" href="http://ft-seo.ch/">FairTech Studio</a></p>
                     </div>
                 </div>
-                <!--// end row -->
-            </div>
+                // end row 
+            </div>-->
             <!-- End Copyright -->
         </footer>
 		 <div class='container-fluid'>

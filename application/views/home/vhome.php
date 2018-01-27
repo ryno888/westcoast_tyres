@@ -1,6 +1,57 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 $base_url = CI_BASE_URL;
+
+	$service_arr[] = [
+		"name" => "Wheel Balancing",
+		"info_short" => "Balancing the wheel for a blanaced ride.",
+		"info_long" => "When the wheel rotates, asymmetries of mass may cause it to hop or wobble, which can cause ride disturbances, usually vertical and lateral vibrations. It can also result in a wobbling of the steering wheel or of the entire vehicle. The ride disturbance, due to unbalance, usually increases with speed. Vehicle suspensions can become excited by unbalance forces when the speed of the wheel reaches a point that its rotating frequency equals the suspension's resonant frequency.",
+		"duration" => "1h",
+		"cost" => "R 0.00",
+		"icon" => "fa-balance-scale",
+	];
+	$service_arr[] = [
+		"name" => "Tyre Rotation",
+		"info_short" => "Maintenance that cannot be ignored.",
+		"info_long" => "Tire rotation is the practice of moving the wheels and tires of an automobile from one position to another, to ensure even tire wear. Even tire wear is desirable to extend the useful life of a set of tires.",
+		"duration" => "1h",
+		"cost" => "R 0.00",
+		"icon" => "fa-refresh",
+	];
+	$service_arr[] = [
+		"name" => "Punctures & Repairs",
+		"info_short" => "The bane of every driver.",
+		"info_long" => "Punctures demand immediate attention, regardless of where you are and what you had otherwise planned. The inconvenience doesn't end with installing the spare wheel either, but continues through the need to immediately have the punctured tyre repaired or replaced.",
+		"duration" => "1h",
+		"cost" => "R 0.00",
+		"icon" => "fa-wrench",
+	];
+	$service_arr[] = [
+		"name" => "Lowering Kits",
+		"info_short" => "A smooth low ride.",
+		"info_long" => "Drop your ride a couple inches with a lowering kit for improved handling and sleek looks. All of our lowering kits and lowering springs are custom-configured for your exact vehicle. From lowering spring sets to the full-blown drop package, we have the right lowering kit for your ride and your budget. And with countless lowering kits reviews to read, you'll discover real experiences from real customers like you.",
+		"duration" => "1h",
+		"cost" => "R 0.00",
+		"icon" => "fa-download",
+	];
+	$service_arr[] = [
+		"name" => "Shocks",
+		"info_short" => "For a much smoother and improved driving experience",
+		"info_long" => "Shock absorbers are instrumental to maintaining the integrity of your vehicle’s suspension. They are primarily designed to allow the tyres to conform to the contours of the road, dampening potential impact on roads and other terrain. Shocks provide your vehicle with stability and maneuverability, which determines a smooth, balanced ride. Shocks affect how well your car handles the road and braking. They play a vital role in providing safe, balanced reflexes and handling during emergencies.",
+		"duration" => "1h",
+		"cost" => "R 0.00",
+		"icon" => "fa-arrows-v",
+	];
+	$service_arr[] = [
+		"name" => "Mag rims",
+		"info_short" => "A shiny new look.",
+		"info_long" => "The rim is the \"outer edge of a wheel, holding the tire\". It makes up the outer circular design of the wheel on which the inside edge of the tire is mounted on vehicles such as automobiles.",
+		"duration" => "1h",
+		"cost" => "R 0.00",
+		"icon" => "fa-gear",
+	];
+
+
 ?>
    <!DOCTYPE html>
 
@@ -63,7 +114,7 @@ $base_url = CI_BASE_URL;
 									<textarea class="form-control contactField" type="textarea contactField" id="message" name="message" placeholder="Message" maxlength="140" rows="7"></textarea>
 								</div>
 
-								<button type="button" class="btn btn-primary pull-right formSubmit" target='contactUs'>Submit Form</button>
+								<button type="button" class="btn btn-primary pull-right formSubmit sidebarFormSubmitBtn" target='contactUs'>Submit Form</button>
 							</form>
 						</div>
 					</div>
@@ -80,261 +131,107 @@ $base_url = CI_BASE_URL;
 				<div class="row margin-b-40">
 					<div class="col-sm-6">
 						<h2>Services</h2>
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
+						<p>We offer a wide variety of services to our clients at affordable rates.</p>
 					</div>
 				</div>
-				<!--// end row -->
+				
 				<div class="row row-space-1 margin-b-2">
-					<!--service 1-->
-					<div class="work work-popup-trigger pointer">
-						<div class="col-sm-4 sm-margin-b-2">
-							<div class="service" data-height="height">
-								<div class="service-element">
-									<i class="fa fa-balance-scale fa-service" aria-hidden="true"></i>
-								</div>
-								<div class="service-info">
-									<h3>Wheel Balancing</h3>
-									<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-								</div>
-							</div>
-						</div>
-						<div class="work-popup-overlay">
-							<div class="work-popup-content">
-								<a href="javascript:void(0);" class="work-popup-close"><i class="fa fa-times font20" aria-hidden="true"></i></a>
-								<div class="">
-									<h3 class="margin-b-5">Wheel Balancing</h3>
-									<span>Information</span>
-								</div>
-								<div class="row">
-									<div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-										<div class="margin-t-10 sm-margin-t-0">
-											<p>When the wheel rotates, asymmetries of mass may cause it to hop or wobble, which can cause ride disturbances, usually vertical and lateral vibrations. It can also result in a wobbling of the steering wheel or of the entire vehicle. The ride disturbance, due to unbalance, usually increases with speed. Vehicle suspensions can become excited by unbalance forces when the speed of the wheel reaches a point that its rotating frequency equals the suspensionâ€™s resonant frequency.</p>
-											<ul class="list-inline work-popup-tag">
-												<li class="work-popup-tag-item"><a class="work-popup-tag-link work-popup-close colorOrange font14 " href="#contact">For more information, contact one of our friendly specialist.</a></li>
-											</ul>
+				<?php
+					$count = 0;
+					for ($i=0; $i < 3; $i++){
+						$service_data = $service_arr[$i];
+						echo "
+							<div class='work work-popup-trigger pointer'>
+								<div class='col-sm-4 sm-margin-b-2'>
+									<div class='service' data-height='height'>
+										<div class='service-element'>
+											<i class='fa {$service_data["icon"]} fa-service' aria-hidden='true'></i>
 										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="margin-t-10 sm-margin-t-0">
-											<p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-											<p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-											<p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-											<p class="margin-b-5"><strong>Client:</strong> FairTech</p>
+										<div class='service-info'>
+											<h3>{$service_data["name"]}</h3>
+											<p class='margin-b-5'>{$service_data["info_short"]}</p>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-					<!--service 2-->
-					<div class="work work-popup-trigger pointer">
-						<div class="col-sm-4 sm-margin-b-2">
-							<div class="service" data-height="height">
-								<div class="service-element">
-									<i class="fa fa-refresh fa-service" aria-hidden="true"></i>
-								</div>
-								<div class="service-info">
-									<h3>Tyre Rotation</h3>
-									<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-								</div>
-							</div>
-						</div>
-						<div class="work-popup-overlay">
-							<div class="work-popup-content">
-								<a href="javascript:void(0);" class="work-popup-close"><i class="fa fa-times font20" aria-hidden="true"></i></a>
-								<div class="">
-									<h3 class="margin-b-5">Wheel Balancing</h3>
-									<span>Information</span>
-								</div>
-								<div class="row">
-									<div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-										<div class="margin-t-10 sm-margin-t-0">
-											<p>When the wheel rotates, asymmetries of mass may cause it to hop or wobble, which can cause ride disturbances, usually vertical and lateral vibrations. It can also result in a wobbling of the steering wheel or of the entire vehicle. The ride disturbance, due to unbalance, usually increases with speed. Vehicle suspensions can become excited by unbalance forces when the speed of the wheel reaches a point that its rotating frequency equals the suspensionâ€™s resonant frequency.</p>
-											<ul class="list-inline work-popup-tag">
-												<li class="work-popup-tag-item"><a class="work-popup-tag-link work-popup-close colorOrange font14 " href="#contact">For more information, contact one of our friendly specialist.</a></li>
-											</ul>
+								<div class='work-popup-overlay'>
+									<div class='work-popup-content'>
+										<a href='javascript:void(0);' class='work-popup-close'><i class='fa fa-times font20' aria-hidden='true'></i></a>
+										<div class=''>
+											<h3 class='margin-b-5'>{$service_data["name"]}</h3>
+											<span>Information</span>
 										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="margin-t-10 sm-margin-t-0">
-											<p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-											<p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-											<p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-											<p class="margin-b-5"><strong>Client:</strong> FairTech</p>
+										<div class='row'>
+											<div class='col-sm-8 work-popup-content-divider sm-margin-b-20'>
+												<div class='margin-t-10 sm-margin-t-0'>
+													<p>{$service_data["info_long"]}</p>
+													<ul class='list-inline work-popup-tag'>
+														<li class='work-popup-tag-item'><a class='work-popup-tag-link work-popup-close colorOrange font14 ' href='#contact'>For more information, contact one of our friendly specialist.</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class='col-sm-4'>
+												<div class='margin-t-10 sm-margin-t-0'>
+													<p class='margin-b-5'><strong>Price:</strong>{$service_data["cost"]}</p>
+													<p class='margin-b-5'><strong>Duration:</strong>{$service_data["duration"]}</p>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<!--service 3-->
-					<div class="work work-popup-trigger pointer">
-						<div class="col-sm-4 sm-margin-b-2">
-							<div class="service" data-height="height">
-								<div class="service-element">
-									<i class="fa fa-wrench fa-service" aria-hidden="true"></i>
-								</div>
-								<div class="service-info">
-									<h3>Punctures & Repairs</h3>
-									<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-								</div>
-							</div>
-						</div>
-						<div class="work-popup-overlay">
-							<div class="work-popup-content">
-								<a href="javascript:void(0);" class="work-popup-close"><i class="fa fa-times font20" aria-hidden="true"></i></a>
-								<div class="">
-									<h3 class="margin-b-5">Wheel Balancing</h3>
-									<span>Information</span>
-								</div>
-								<div class="row">
-									<div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-										<div class="margin-t-10 sm-margin-t-0">
-											<p>When the wheel rotates, asymmetries of mass may cause it to hop or wobble, which can cause ride disturbances, usually vertical and lateral vibrations. It can also result in a wobbling of the steering wheel or of the entire vehicle. The ride disturbance, due to unbalance, usually increases with speed. Vehicle suspensions can become excited by unbalance forces when the speed of the wheel reaches a point that its rotating frequency equals the suspensionâ€™s resonant frequency.</p>
-											<ul class="list-inline work-popup-tag">
-												<li class="work-popup-tag-item"><a class="work-popup-tag-link work-popup-close colorOrange font14 " href="#contact">For more information, contact one of our friendly specialist.</a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="margin-t-10 sm-margin-t-0">
-											<p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-											<p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-											<p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-											<p class="margin-b-5"><strong>Client:</strong> FairTech</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+						";
+					}
+				?>
 				</div>
-				<!--// end row -->
+				
 
 				<div class="row row-space-1">
-					<!--service 1-->
-					<div class="work work-popup-trigger pointer">
-						<div class="col-sm-4 sm-margin-b-2">
-							<div class="service" data-height="height">
-								<div class="service-element">
-									<i class="fa fa-download fa-service" aria-hidden="true"></i>
-								</div>
-								<div class="service-info">
-									<h3>Lowering Kits</h3>
-									<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-								</div>
-							</div>
-						</div>
-						<div class="work-popup-overlay">
-							<div class="work-popup-content">
-								<a href="javascript:void(0);" class="work-popup-close"><i class="fa fa-times font20" aria-hidden="true"></i></a>
-								<div class="">
-									<h3 class="margin-b-5">Wheel Balancing</h3>
-									<span>Information</span>
-								</div>
-								<div class="row">
-									<div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-										<div class="margin-t-10 sm-margin-t-0">
-											<p>When the wheel rotates, asymmetries of mass may cause it to hop or wobble, which can cause ride disturbances, usually vertical and lateral vibrations. It can also result in a wobbling of the steering wheel or of the entire vehicle. The ride disturbance, due to unbalance, usually increases with speed. Vehicle suspensions can become excited by unbalance forces when the speed of the wheel reaches a point that its rotating frequency equals the suspensionâ€™s resonant frequency.</p>
-											<ul class="list-inline work-popup-tag">
-												<li class="work-popup-tag-item"><a class="work-popup-tag-link work-popup-close colorOrange font14 " href="#contact">For more information, contact one of our friendly specialist.</a></li>
-											</ul>
+					<?php
+						$count = 0;
+						for ($i=3; $i < 6; $i++){
+							$service_data = $service_arr[$i];
+							echo "
+								<div class='work work-popup-trigger pointer'>
+									<div class='col-sm-4 sm-margin-b-2'>
+										<div class='service' data-height='height'>
+											<div class='service-element'>
+												<i class='fa {$service_data["icon"]} fa-service' aria-hidden='true'></i>
+											</div>
+											<div class='service-info'>
+												<h3>{$service_data["name"]}</h3>
+												<p class='margin-b-5'>{$service_data["info_short"]}</p>
+											</div>
 										</div>
 									</div>
-									<div class="col-sm-4">
-										<div class="margin-t-10 sm-margin-t-0">
-											<p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-											<p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-											<p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-											<p class="margin-b-5"><strong>Client:</strong> FairTech</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--service 2-->
-					<div class="work work-popup-trigger pointer">
-						<div class="col-sm-4 sm-margin-b-2">
-							<div class="service" data-height="height">
-								<div class="service-element">
-									<i class="fa fa-arrows-v fa-service" aria-hidden="true"></i>
-								</div>
-								<div class="service-info">
-									<h3>Shocks</h3>
-									<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-								</div>
-							</div>
-						</div>
-						<div class="work-popup-overlay">
-							<div class="work-popup-content">
-								<a href="javascript:void(0);" class="work-popup-close"><i class="fa fa-times font20" aria-hidden="true"></i></a>
-								<div class="">
-									<h3 class="margin-b-5">Wheel Balancing</h3>
-									<span>Information</span>
-								</div>
-								<div class="row">
-									<div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-										<div class="margin-t-10 sm-margin-t-0">
-											<p>When the wheel rotates, asymmetries of mass may cause it to hop or wobble, which can cause ride disturbances, usually vertical and lateral vibrations. It can also result in a wobbling of the steering wheel or of the entire vehicle. The ride disturbance, due to unbalance, usually increases with speed. Vehicle suspensions can become excited by unbalance forces when the speed of the wheel reaches a point that its rotating frequency equals the suspensionâ€™s resonant frequency.</p>
-											<ul class="list-inline work-popup-tag">
-												<li class="work-popup-tag-item"><a class="work-popup-tag-link work-popup-close colorOrange font14 " href="#contact">For more information, contact one of our friendly specialist.</a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="margin-t-10 sm-margin-t-0">
-											<p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-											<p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-											<p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-											<p class="margin-b-5"><strong>Client:</strong> FairTech</p>
+									<div class='work-popup-overlay'>
+										<div class='work-popup-content'>
+											<a href='javascript:void(0);' class='work-popup-close'><i class='fa fa-times font20' aria-hidden='true'></i></a>
+											<div class=''>
+												<h3 class='margin-b-5'>{$service_data["name"]}</h3>
+												<span>Information</span>
+											</div>
+											<div class='row'>
+												<div class='col-sm-8 work-popup-content-divider sm-margin-b-20'>
+													<div class='margin-t-10 sm-margin-t-0'>
+														<p>{$service_data["info_long"]}</p>
+														<ul class='list-inline work-popup-tag'>
+															<li class='work-popup-tag-item'><a class='work-popup-tag-link work-popup-close colorOrange font14 ' href='#contact'>For more information, contact one of our friendly specialist.</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class='col-sm-4'>
+													<div class='margin-t-10 sm-margin-t-0'>
+														<p class='margin-b-5'><strong>Price:</strong>{$service_data["cost"]}</p>
+														<p class='margin-b-5'><strong>Duration:</strong>{$service_data["duration"]}</p>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-					<!--service 3-->
-					<div class="work work-popup-trigger pointer">
-						<div class="col-sm-4 sm-margin-b-2">
-							<div class="service" data-height="height">
-								<div class="service-element">
-									<i class="fa fa-gear fa-service" aria-hidden="true"></i>
-								</div>
-								<div class="service-info">
-									<h3>Mag rims</h3>
-									<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-								</div>
-							</div>
-						</div>
-						<div class="work-popup-overlay">
-							<div class="work-popup-content">
-								<a href="javascript:void(0);" class="work-popup-close"><i class="fa fa-times font20" aria-hidden="true"></i></a>
-								<div class="">
-									<h3 class="margin-b-5">Wheel Balancing</h3>
-									<span>Information</span>
-								</div>
-								<div class="row">
-									<div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-										<div class="margin-t-10 sm-margin-t-0">
-											<p>When the wheel rotates, asymmetries of mass may cause it to hop or wobble, which can cause ride disturbances, usually vertical and lateral vibrations. It can also result in a wobbling of the steering wheel or of the entire vehicle. The ride disturbance, due to unbalance, usually increases with speed. Vehicle suspensions can become excited by unbalance forces when the speed of the wheel reaches a point that its rotating frequency equals the suspensionâ€™s resonant frequency.</p>
-											<ul class="list-inline work-popup-tag">
-												<li class="work-popup-tag-item"><a class="work-popup-tag-link work-popup-close colorOrange font14 " href="#contact">For more information, contact one of our friendly specialist.</a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="margin-t-10 sm-margin-t-0">
-											<p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-											<p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-											<p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-											<p class="margin-b-5"><strong>Client:</strong> FairTech</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+							";
+						}
+					?>
 				</div>
 				<!--// end row -->
 			</div>
@@ -778,7 +675,8 @@ $base_url = CI_BASE_URL;
 
 				<!-- Google Map -->
 				<div class="map height-300">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.0694570748947!2d7.455080415208266!3d46.94067397914616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39d0cf20e8d1%3A0x9daac4cd3043d067!2sThunstrasse+50%2C+3005+Bern%2C+Switzerland!5e0!3m2!1sen!2sin!4v1496749852928" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.0694570748947!2d7.455080415208266!3d46.94067397914616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39d0cf20e8d1%3A0x9daac4cd3043d067!2sThunstrasse+50%2C+3005+Bern%2C+Switzerland!5e0!3m2!1sen!2sin!4v1496749852928" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31521.530606019984!2d18.526301938906716!3d-33.85634520968747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d793f31ec658271!2sDunlop+Zone+Milnerton+-+Westcoast+Tyres!5e0!3m2!1sen!2sza!4v1517060559244" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>

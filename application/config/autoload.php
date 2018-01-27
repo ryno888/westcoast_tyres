@@ -76,6 +76,8 @@ $autoload['libraries'] = array(
     "dbx/dbx_person",
     "dbx/dbx_person_role",
     "dbx/dbx_role",
+	
+    "addons/Lib_email_template",
 );
 
 /*
