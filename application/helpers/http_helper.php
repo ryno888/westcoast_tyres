@@ -1,13 +1,13 @@
 <?php
 
 /*
- * Class 
- * @filename lib 
+ * Class
+ * @filename lib
  * @encoding UTF-8
- * @author Liquid Edge Solutions  * 
- * @copyright Copyright Liquid Edge Solutions. All rights reserved. * 
- * @programmer Ryno van Zyl * 
- * @date 14 Feb 2017 * 
+ * @author Liquid Edge Solutions  *
+ * @copyright Copyright Liquid Edge Solutions. All rights reserved. *
+ * @programmer Ryno van Zyl *
+ * @date 14 Feb 2017 *
  */
 
 /**
@@ -63,6 +63,7 @@ class Http_helper {
     public static function json($data_arr = []) {
         header('Content-Type: application/json');
         echo json_encode($data_arr);
+        return "";
     }
     //--------------------------------------------------------------------------
     public static function error($code, $string = "") {

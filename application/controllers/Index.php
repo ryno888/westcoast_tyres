@@ -56,8 +56,16 @@ class Index extends CI_Controller {
 		$per_lastname = request("per_lastname");
 		$per_email = request("per_email");
 		$message = request("message");
-		
-		
+
+		$error_arr = [];
+
+		if(!$per_firstname) $error_arr[] = "Firstname cannot be empty";
+		if(!$per_lastname) $error_arr[] = "Surname cannot be empty";
+		if(!$per_email) $error_arr[] = "Email cannot be empty";
+		if(!$message) $error_arr[] = "Message cannot be empty";
+
+		if($error_arr) return Http_helper::json(["code" => 1, "message" => implode("<br>", $error_arr)]);
+
 		$config = Array(
 			'protocol' => 'smtp',
 			'smtp_host' => 'mail.wctyres.co.za',
@@ -75,7 +83,7 @@ class Index extends CI_Controller {
 		$template->add_argument("per_lastname", $per_lastname);
 		$template->add_argument("per_email", $per_email);
 		$template->add_argument("message", $message);
-		
+
         $this->load->library('email', $config);
 		$this->email->set_newline("\r\n");
 		$this->email->from('admin@wctyres.co.za'); // change it to yours

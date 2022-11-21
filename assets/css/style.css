@@ -217,6 +217,26 @@ p {
     background: #f7f7f7!important;
 }
 
+.sidebar-whatsapp-btn{
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px 0px 0px 5px;
+    position: fixed;
+    right: 0;
+    z-index: 9999;
+}
+.sidebar-whatsapp-btn a{
+    padding: 10px 15px 10px 15px;
+    background: #00BFA5;
+    border-radius: 5px 0px 0px 5px;
+    color: #FFF;
+    font-size: 20px;
+}
+.sidebar-whatsapp-btn a:hover{
+    background: #00ae94;
+}
+
 /*contact*/
 .sidebar-wrapper{
     position: fixed; 
@@ -254,6 +274,7 @@ p {
     width: 90px;
     height: 35px;
     z-index: 9999;
+    margin-top: 40px;
 }
 .sidebar-btn:hover{
     background-color: #c50a0a;

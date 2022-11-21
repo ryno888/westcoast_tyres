@@ -6,7 +6,7 @@
 
 //general
 
-defined('CI_BASE_URL')          OR define('CI_BASE_URL', "http://localhost/westcoast_tyres/"); 
+defined('CI_BASE_URL')          OR define('CI_BASE_URL', "http://westcoast_tyres.local/");
 defined('CI_NAME')              OR define('CI_NAME', "West Coast Tyres"); 
 defined('CI_SYSTEM_NAME')       OR define('CI_SYSTEM_NAME', "Admin System"); 
 defined('CI_ENCRYPT_KEY')       OR define('CI_ENCRYPT_KEY', "locWestcoastTyresKey"); 

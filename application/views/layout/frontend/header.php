@@ -8,9 +8,9 @@ $base_url = CI_BASE_URL;
 	<title><?php echo CI_META_TITLE; ?></title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="width=device-width, initial-scale=1" name="viewport"/>
-	<meta content="FlameOnePage freebie theme for web startups by FairTech SEO." name="description"/>
-	<meta content="FairTech" name="author"/>
-	
+	<meta content="Westcoast Tyres" name="description"/>
+	<meta content="Sentinal Systems" name="author"/>
+
 	<?php
 		$meta_arr[] = [
 			'name' => "title",
@@ -36,7 +36,7 @@ $base_url = CI_BASE_URL;
 			echo meta($content);
 		}
 	?>
-	
+
 	<!--<link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">-->
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link href="<?php echo "{$base_url}assets/vendor/simple-line-icons/simple-line-icons.min.css"; ?>" rel="stylesheet" type="text/css"/>
@@ -47,9 +47,10 @@ $base_url = CI_BASE_URL;
     <link rel="stylesheet" type="text/css" href="<?php echo $base_url; ?>assets/css/frontend.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $base_url; ?>assets/css/style.css">
 	<link rel="stylesheet" href="<?php echo "{$base_url}assets/vendor/font-awesome-4.7.0/css/font-awesome.min.css" ?>">
-    
+
 	<link rel="shortcut icon" href="<?php echo $base_url; ?>assets/img/favicon.png"/>
     <script> var ci_base_url = "<?php echo CI_BASE_URL; ?>"; </script>
+    <!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
 	<script src="<?php echo "{$base_url}assets/vendor/jquery.min.js"; ?>" type="text/javascript"></script>
 </head>
 
@@ -80,11 +81,14 @@ $base_url = CI_BASE_URL;
 				<div class="collapse navbar-collapse nav-collapse">
 					<div class="menu-container">
 						<ul class="nav navbar-nav navbar-nav-right">
-							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
+							<!--<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>-->
 							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#services">Services</a></li>
 							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#products">Products</a></li>
+<!--							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#specials">Specials</a></li>-->
+							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#suppliers">Suppliers</a></li>
 							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About Us</a></li>
-							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover1" href="#contact">Contact</a></li>
+							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#staff">Staff</a></li>
+							<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
 						</ul>
 					</div>
 				</div>

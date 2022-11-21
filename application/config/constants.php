@@ -89,7 +89,8 @@ include_once BASEPATH."../application/setup.php";
 //directories
 defined('DIR_APPLICATION')      OR define('DIR_APPLICATION', APPPATH); // no errors
 defined('DIR_LOGS')             OR define('DIR_LOGS', APPPATH."logs/"); // no errors
-defined('DIR_ASSETS')           OR define('DIR_ASSETS', APPPATH."../assets/"); 
+defined('DIR_SESSIONS')         OR define('DIR_SESSIONS', APPPATH."sessions/"); // no errors
+defined('DIR_ASSETS')           OR define('DIR_ASSETS', APPPATH."../assets/");
 defined('DIR_FILES')            OR define('DIR_FILES', DIR_ASSETS."files/"); 
 defined('DIR_THIRD_PARTY')      OR define('DIR_THIRD_PARTY', APPPATH."third_party/"); 
 

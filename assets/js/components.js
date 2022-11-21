@@ -17,12 +17,19 @@ $(document).ready(function () {
             type: "POST",
             url: '../index/xcontact',
             data: $('#'+$(this).attr("target")).serialize(),
-            success: function () {},
+            success: function (response) {
+                if(response.code === 1){
+                    setTimeout(function(){
+                        system.browser.message('Alert', response.message);
+                    }, 500);
+                }else{
+                    setTimeout(function(){
+                        system.browser.message('Contact Us', 'Thank you for contacting us. <br>One of our friendly consultants will be in contact with you soon.');
+                    }, 500);
+                }
+            },
             complete: function () {
                 hideLoader();
-                setTimeout(function(){
-                    system.browser.message('Contact Us', 'Thank you for contacting us. <br>One of our friendly consultants will be in contact with you soon.');
-                }, 500);
             },
         });
     });
