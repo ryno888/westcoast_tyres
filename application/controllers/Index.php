@@ -76,7 +76,7 @@ class Index extends CI_Controller {
 			'charset' => 'iso-8859-1',
 			'wordwrap' => TRUE
 		);
-		
+
 		$template = new Lib_email_template();
 		$template->set_template("contact");
 		$template->add_argument("per_firstname", $per_firstname);

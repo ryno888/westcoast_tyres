@@ -321,7 +321,7 @@ $base_url = CI_BASE_URL;
 												<span class="colorOrange">Your Journey, Our Passion</span>
 											</div>
 											<div class="row">
-												<div class="col-sm-12 work-popup-content-divider sm-margin-b-20">
+												<div class="col-sm-12 sm-margin-b-20">
 												<!--<div class="col-sm-6 work-popup-content-divider sm-margin-b-20">-->
 													<div class="margin-t-10 sm-margin-t-0">
 														<p>At  Bridgestone, their dream is to become a truly global enterprise and to establish the Bridgestone brand as the  undisputed world No. 1 brand  in both name and substance. Across the globe, their entire team is focused on achieving this goal.</p>
@@ -352,18 +352,18 @@ $base_url = CI_BASE_URL;
 												<span class="colorOrange">The arrival is as important as the Journey, Forever Forward</span>
 											</div>
 											<div class="row">
-												<div class="col-sm-6 work-popup-content-divider sm-margin-b-20">
+												<div class="col-sm-12 sm-margin-b-20">
 													<div class="margin-t-10 sm-margin-t-0">
 														<p>Dunlop is one of the most iconic and recognisable tyre brands in the world, with an unbroken history going back over 120 years. Dunlop has a proud history of developing quality products, setting new motorsport milestones, and pioneering ground breaking innovations in vehicle safety and performance.</p>
 													</div>
 												</div>
-												<div class="col-sm-6">
-													<div class="margin-t-10 sm-margin-t-0">
-														<p class="margin-b-5"><strong class="colorYellow">195/50R15 Dunlop FM800 549 </strong> from:R 549.00</p>
-														<!--<p class="margin-b-5"><strong class="colorYellow">Lt truck and commercial tyre</strong> from:R 1286.00</p>-->
-														<!--<p class="margin-b-5"><strong class="colorYellow">4x4 SUV & Lt truck</strong> from:R 4737.00</p>-->
-													</div>
-												</div>
+<!--												<div class="col-sm-6">-->
+<!--													<div class="margin-t-10 sm-margin-t-0">-->
+<!--														<p class="margin-b-5"><strong class="colorYellow">195/50R15 Dunlop FM800 549 </strong> from:R 549.00</p>-->
+<!--														<p class="margin-b-5"><strong class="colorYellow">Lt truck and commercial tyre</strong> from:R 1286.00</p>-->
+<!--														<p class="margin-b-5"><strong class="colorYellow">4x4 SUV & Lt truck</strong> from:R 4737.00</p>-->
+<!--													</div>-->
+<!--												</div>-->
 											</div>
 										</div>
 									</div>
